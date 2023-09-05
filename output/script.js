@@ -18,17 +18,29 @@
 // let numbers: number[] = [1, 2, 3, 4, 5]
 // numbers.push(6, 7, 8)
 // console.log(numbers);
-// tuple
+// // tuple
 // let ourTuple: [number, boolean, string] = [5, true, 'Bangladesh'];
-// Named Tuples
+// // Named Tuples
 // const graph: [x: number, y: number] = [55.2, 41.3];
-var sportsMan = {
-    name: 'Sakib',
-    age: 35,
-    isCaptain: true,
-};
+// let sportsMan: { name: string, age: number, isCaptain: boolean } = {
+//     name: 'Sakib',
+//     age: 35,
+//     isCaptain: true,
+// }
 // let sportsMan2 = {
 //     name: 'Sakib',
 //     age: 35,
 //     isCaptain: true,
 // }
+// const car: { type: string, mileage?: number } = {
+//     type: "Toyota"
+// };
+// car.mileage = 2000;
+// Index Signatures
+// const nameAgeMap: { [index: string]: string } = {}
+// nameAgeMap['name'] = 'Jonas Smith';
+// nameAgeMap['city'] = 'New York';
+// const nameAgeMap2: { [index: string]: string | number } = {}
+// nameAgeMap2['name'] = 'Jonas Smith';
+// nameAgeMap2['age'] = 30;
+// nameAgeMap2['city'] = 'New York';
