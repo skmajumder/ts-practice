@@ -89,11 +89,11 @@ var Person = /** @class */ (function () {
         this.country = country;
     }
     Person.prototype.greeting = function () {
-        console.log("Greeting ".concat(this.name));
+        return "Greeting ".concat(this.name);
     };
     return Person;
 }());
 var person1 = new Person("John", 20, "Luxembourg");
 var person2 = new Person("John", 21, "Portugal");
 var persons = [person1, person2];
-console.log(persons);
+console.log(person1.greeting());

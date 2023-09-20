@@ -115,18 +115,18 @@
 // Classes
 
 class Person {
-  name: string
-  age: number
-  country: string
+  private name: string
+  private age: number
+  private country: string
 
-  constructor(name: string, age: number, country: string) {
-    this.name = name;
-    this.age = age;
-    this.country = country;
+  public constructor(name: string, age: number, country: string) {
+    this.name = name
+    this.age = age
+    this.country = country
   }
 
-  greeting() {
-    console.log(`Greeting ${this.name}`)
+  public greeting(): string {
+    return `Greeting ${this.name}`
   }
 }
 
@@ -135,4 +135,4 @@ const person2 = new Person("John", 21, "Portugal")
 
 const persons: Person[] = [person1, person2]
 
-console.log(persons)
+console.log(person1.greeting())
