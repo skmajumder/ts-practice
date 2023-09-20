@@ -1,4 +1,4 @@
-"use strict";
+import { Person } from "./classes/Person.js";
 /* eslint-disable @typescript-eslint/space-before-function-paren */
 // const userName: string = "Shuvo";
 // console.log(userName);
@@ -81,20 +81,9 @@
 //   return `${userInfo.name} ID: ${id}, Age: ${userInfo.age}`
 // }
 // console.log(userDetails('SE23', { name: 'John', age: 30 }));
-// Classes
-var Person = /** @class */ (function () {
-    function Person(name, age, country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
-    Person.prototype.greeting = function () {
-        return "Greeting ".concat(this.name);
-    };
-    return Person;
-}());
-var person1 = new Person("John", 20, "Luxembourg");
-var person2 = new Person("John", 21, "Portugal");
-var person3 = new Person("Jonas", 20, "Denmark");
-var persons = [person1, person2, person3];
+// // Classes
+const person1 = new Person("John", 20, "Luxembourg");
+const person2 = new Person("John", 21, "Portugal");
+const person3 = new Person("Jonas", 20, "Denmark");
+const persons = [person1, person2, person3];
 console.log(person1.greeting());

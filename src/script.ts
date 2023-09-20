@@ -1,3 +1,5 @@
+import { Person } from "./classes/Person.js"
+
 /* eslint-disable @typescript-eslint/space-before-function-paren */
 // const userName: string = "Shuvo";
 // console.log(userName);
@@ -112,19 +114,7 @@
 // }
 // console.log(userDetails('SE23', { name: 'John', age: 30 }));
 
-// Classes
-
-class Person {
-  public constructor(
-    private name: string,
-    private age: number,
-    private country: string
-  ) {}
-
-  public greeting(): string {
-    return `Greeting ${this.name}`
-  }
-}
+// // Classes
 
 const person1 = new Person("John", 20, "Luxembourg")
 const person2 = new Person("John", 21, "Portugal")
