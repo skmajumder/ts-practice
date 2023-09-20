@@ -1,7 +1,6 @@
 // const userName: string = "Shuvo";
 // console.log(userName);
 
-
 // const arrFun = () => {
 //     console.log('Arrow Function');
 
@@ -62,3 +61,13 @@
 // nameAgeMap2['age'] = 30;
 // nameAgeMap2['city'] = 'New York';
 
+// function prinToConsole(str: unknown) {
+//     console.log(str);
+// }
+// prinToConsole(10);
+
+const printString = (str: unknown): void => {
+  console.log(str)
+}
+
+printString('Hello, TypeScript')

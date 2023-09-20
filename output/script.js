@@ -44,3 +44,11 @@
 // nameAgeMap2['name'] = 'Jonas Smith';
 // nameAgeMap2['age'] = 30;
 // nameAgeMap2['city'] = 'New York';
+// function prinToConsole(str: unknown) {
+//     console.log(str);
+// }
+// prinToConsole(10);
+var printString = function (str) {
+    console.log(str);
+};
+printString('Hello, TypeScript');
