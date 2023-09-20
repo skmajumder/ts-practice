@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/space-before-function-paren */
 // const userName: string = "Shuvo";
 // console.log(userName);
 
@@ -13,12 +14,6 @@
 
 // str = "Bangldesh";
 // str = 53;
-
-// function multiply(a: number, b: number) {
-//     return a * b;
-// }
-
-// console.log(multiply(5, 4));
 
 // let names = ['Jonas', 'Margaret', 'Ariana']
 // let names: string[] = ['Jonas', 'Margaret', 'Ariana']
@@ -61,13 +56,38 @@
 // nameAgeMap2['age'] = 30;
 // nameAgeMap2['city'] = 'New York';
 
-// function prinToConsole(str: unknown) {
-//     console.log(str);
+// function prinToConsole (str: unknown): void {
+//   console.log(str)
 // }
-// prinToConsole(10);
+// prinToConsole(10)
 
-const printString = (str: unknown): void => {
-  console.log(str)
+// const printString = (str: unknown): void => {
+//     console.log(str)
+// }
+
+// printString('Hello, TypeScript')
+
+// const myFun = (a: string, b: string, c: string = 'c') => {
+//     console.log(c);
+//     console.log(`Print: ${a} ${b}`);
+// }
+
+// myFun('3', '4');
+
+// function multiply(a: number, b: number): number {
+//   return a * b
+// }
+
+// console.log(multiply(5, 4))
+
+// Type Aliases
+
+type stringOrNumber = string | number
+type userType = { name: string; age: number }
+
+const userDetails = (
+  id: stringOrNumber,
+  user: userType
+): void => {
+  console.log(`User ID:${id}, Name is: ${user.name}, Age: ${user.age}`);
 }
-
-printString('Hello, TypeScript')
