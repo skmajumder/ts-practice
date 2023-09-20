@@ -95,5 +95,6 @@ var Person = /** @class */ (function () {
 }());
 var person1 = new Person("John", 20, "Luxembourg");
 var person2 = new Person("John", 21, "Portugal");
-var persons = [person1, person2];
+var person3 = new Person("Jonas", 20, "Denmark");
+var persons = [person1, person2, person3];
 console.log(person1.greeting());
