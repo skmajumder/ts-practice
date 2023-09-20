@@ -80,14 +80,35 @@
 
 // console.log(multiply(5, 4))
 
-// Type Aliases
+// // Type Aliases
 
-type stringOrNumber = string | number
-type userType = { name: string; age: number }
+// type stringOrNumber = string | number
+// type userType = { name: string; age: number }
 
-const userDetails = (
-  id: stringOrNumber,
-  user: userType
-): void => {
-  console.log(`User ID:${id}, Name is: ${user.name}, Age: ${user.age}`);
-}
+// const userDetails = (
+//   id: stringOrNumber,
+//   user: userType
+// ): void => {
+//   console.log(`User ID: ${id}, Name is: ${user.name}, Age: ${user.age}`);
+// }
+
+// userDetails(20, { name: 'John', age: 30 })
+
+// // Function Signatures
+// let printString: (a: string) => string;
+
+// printString = (text: string) => {
+//   return text
+// }
+// console.log(printString('Function Signatures'))
+
+// type stringOrNumber = string | number
+// type userType = { name: string; age: number }
+
+// let userDetails: (id: stringOrNumber, userInfo: userType) => string
+
+// userDetails = (id: stringOrNumber, userInfo: userType) => {
+//   return `${userInfo.name} ID: ${id}, Age: ${userInfo.age}`
+// }
+// console.log(userDetails('SE23', { name: 'John', age: 30 }));
+
