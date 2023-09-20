@@ -81,3 +81,19 @@
 //   return `${userInfo.name} ID: ${id}, Age: ${userInfo.age}`
 // }
 // console.log(userDetails('SE23', { name: 'John', age: 30 }));
+// Classes
+var Person = /** @class */ (function () {
+    function Person(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
+    Person.prototype.greeting = function () {
+        console.log("Greeting ".concat(this.name));
+    };
+    return Person;
+}());
+var person1 = new Person("John", 20, "Luxembourg");
+var person2 = new Person("John", 21, "Portugal");
+var persons = [person1, person2];
+console.log(persons);

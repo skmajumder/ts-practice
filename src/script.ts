@@ -112,3 +112,27 @@
 // }
 // console.log(userDetails('SE23', { name: 'John', age: 30 }));
 
+// Classes
+
+class Person {
+  name: string
+  age: number
+  country: string
+
+  constructor(name: string, age: number, country: string) {
+    this.name = name;
+    this.age = age;
+    this.country = country;
+  }
+
+  greeting() {
+    console.log(`Greeting ${this.name}`)
+  }
+}
+
+const person1 = new Person("John", 20, "Luxembourg")
+const person2 = new Person("John", 21, "Portugal")
+
+const persons: Person[] = [person1, person2]
+
+console.log(persons)
